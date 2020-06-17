@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTA Notable Trees</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <h1>NTA Notable Trees - Demo</h1>
     <div id='tree-map'></div>
+
     <script async defer src='assets/app.js'></script>
-    <!-- this key is restricted, need to generate your own-->
+<!-- Google Maps API - Restricted Key -->
     <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB784TpO3NSnuyt1lJi7B3ntwr_TCwsbUI&callback=initMap'></script>
+<!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script async defer src='assets/firebase.js'></script>
 </body>
 </html>

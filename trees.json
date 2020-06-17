@@ -1,0 +1,20 @@
+{
+    "trees": [{
+        "name": "Emily Testing", 
+        "treename" : "Norway Maple Test",
+        "age" : 125,
+        "description" : "Testing Testing 123",
+        "location" : {
+            "latitude" : 41.086349,
+            "longitute" : -73.392853
+            }
+    }, {
+        "name": "Emily Testing 2", 
+        "treename" : "London Planetree",
+        "age" : 78,
+        "description" : "Testing Testing 456",
+        "location" : {
+            "latitude" : 41.0856661,
+            "longitute" : -73.3931022
+            }
+}]}

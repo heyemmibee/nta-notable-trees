@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwalks Notable Trees | Norwalk Tree Alliance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">Norwalks Notable Trees</h1>
+    </div>
+    <div class="col-lg-6">
+        <div class="card card-default">
+            <div class="card-header">
+                Submit a Tree
+            </div>
+            <div class="card-body">
+                <form role="form">
+                    <div class="form-group row">
+                        <label for="name-input">Your Name</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <!-- https://www.arborday.org/trees/treeGuide/browsetrees.cfm - i for more help classify go to arborday.org-small link  -->
+                        <label for="tree-name-input">Tree Name (Or Best Guess)</label>
+                        <input class="form-control" id="tree-name-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="age-input">How old do you think this tree is?</label>
+                        <input class="form-control" id="age-input" type="number">
+                    </div>
+                    <div class="form-group row">
+                        <label for="description-input">Describe the tree. What sorts of things are notable?</label>
+                        <textarea class="form-control" id="description-input" rows="6"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <!-- this section would be perfect for google maps api - select location - to get closer coordinates -->
+                        <label for="location-input">Location</label>
+                        <input class="form-control" id="location-input" type="string">
+                    </div>
+                    <button class="btn btn-warning" id="add-tree" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+     <div class="col-lg-6">
+        <div class="card card-default">
+          <div class="card-header">
+            About This Tree
+          </div>
+          <div class="card-body" id="recent-member">
+            <h2 id="name-display"></h2>
+            <h4 id="tree-name-display"></h4>
+            <h4 id="age-display"></h4>
+            <p id="description-display"></p>
+            <h4 id="location-display"></h4>
+          </div>
+        </div>
+      </div>
+</div>
+
+ <!-- jQuery 3.5.1-->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script async defer src='assets/app.js'></script>
+ <!-- Google Maps API - Restricted Key -->
+<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB784TpO3NSnuyt1lJi7B3ntwr_TCwsbUI&callback=initMap'></script>
+ <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script async defer src='assets/firebase.js'></script>
+
+</body>
+</html>
