@@ -1,7 +1,7 @@
 #Norwalks Notable Trees - NTA Project by burnmandesigns
 
-#Requirements
+#TechUsed
 -Node.js / NPM ("https://nodejs.org/en/download/")
 -Brew ("https://brew.sh/")
--Google Cloud Platform APIs ("https://console.cloud.google.com/google/maps-apis")
+-Mapbox API ("https://docs.mapbox.com/mapbox-gl-js/api/")
 -Firebase ("https://firebase.google.com/docs/reference/js?authuser=0")

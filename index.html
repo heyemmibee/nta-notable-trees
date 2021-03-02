@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTA Notable Trees</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <script async defer src='../app.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 
-<!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-    <script async defer src='assets/firebase.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/reset.css"> -->
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
 <body>
-    <h1>NTA Notable Trees - Demo</h1>
-    <div id='tree-map'></div>
+    <div class="container">
+        <h1>NTA Notable Trees - Demo</h1>
+        <div id='map'style="height:800px;width:900px;"></div>
+    </div>
+    
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGV5ZW1taWJlZSIsImEiOiJja2xoMWNseTIyOGd4Mm9zNnFlYmJyeHJ5In0.XDmy9ismXuZXevqy0Xt5VQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11', 
+center: [-73.434, 41.092], 
+zoom: 13,
+});
+</script>
 
 </body>
 
